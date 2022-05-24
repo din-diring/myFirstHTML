@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <title>Форма обратной связи</title>
+</head>
+<body>
+
+ <header>
+        <h1>Связь со мной</h1>
+    </header>
+    <div>
+        <p><a href="./main_page.html"><strong>Вернуться на главную</strong></a></p>
+        <form action="/submition">
+        <fieldset>
+        <legend>Обратная связь</legend>
+            <div>
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" placeholder="Введите ваше имя...">
+            </div>
+
+            <div>
+                <br>
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" placeholder="Введите email...">
+            </div>
+            
+            <div>
+                <br>
+                <label for="text">Контактный телефон:</label>
+                <input type="tel" id="tel" placeholder="Введите телефон...">
+            </div>
+
+
+            <div>
+            <br>
+                <label for="text">Дата обращения:</label>
+                <input type="date" id="date">
+                
+            </div>
+
+            <div>
+                <br>
+                <label for="text">Ваше сообщение:</label>
+                <br>
+                <textarea id="text" rows="10" cols="60" placeholder="Введите текст сообщения..."></textarea>
+                <br>
+                <input type="file" id="file" placeholder="Выберите файл">
+            </div>
+            
+            <label for="clr">Выберите цвет своего настроения</label>
+            <input type="color" id="clr"><br>
+            <label for="rng">Насколько вы довольны сайтом?</label>
+            <input type="range" name="rng"><br>
+            <br>
+            <label for="chkAccepted">Согласие на обработку данных</label>
+            <input type="checkbox" name="chkAccepted"><br><br>
+            <input style="color: purple" type="submit" value="Отправить">
+            
+            </fieldset>
+            </form>
+            <div>
+                <image class="nopad" controls style="width: 80pt; height: 65pt; position: fixed; border-radius: 50px; top: 6px; right: 10px;" src="https://vestart.ru/images/2019/11/26/aasdil17wbk.jpg">
+                 </image>
+            </div>
+                
+       
+    </div>
+</body>
+</html>

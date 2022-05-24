@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <title>My page</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Я - студентка ВШЭ</h1>
+    </header>
+
+    <form align=right action="/serverscript" method="get">
+      <input type="search" name="query" placeholder="Поиск по сайту">
+      <input type="submit" name="query" value="&#128269;">
+    </form>
+    <nav>
+      <h2>Содержание</h2>
+      <ul type="circle">
+        <li><a href="#sec1">О ВУЗе</a></li>
+        <li><a href="#sec2">Обо мне</a></li>
+        <li><a href="#sec3">Мои увлечения</a></li>
+        <li><a href="#footer">Обратная связь</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="sec1">
+        <h2>О ВУЗе</h2>
+        <article> Национальный исследовательский университет <strong>"Высшая школа экономики"</strong> - так называется университет в котором я учусь уже третий год. Мой факультет "<a href="https://miem.hse.ru"><strong>Московский институт электроники и математики</strong></a>" присоединился к ВШЭ в <i>2011</i> году и представляет такие направления:
+          <ul>
+            <li>Информатика и вычислительная техника</li>
+            <li>Информационная безопасность</li>
+            <li>Инфокоммуникационные технологии и системы связи</li>
+            <li>Компьютерная безопасность</li>
+            <li>Прикладная математика</li>
+          </ul>
+          Последннее в списке направление подготовки мне очень знакомо, так как именно на нём я и обучаюсь.
+        </article>
+
+        <p align=center><img class="pad" id="fig" width=400px height="auto" src="https://www.hse.ru/data/2021/11/02/1455871951/3м1.jpeg.(1000x1000x1).jpg"></p>
+
+      </section>
+
+      <section id="sec2">
+        <h2>Обо мне</h2>
+
+        <h3>
+          Меня зовут Ирина Грибкова
+        </h3>
+        <table>
+          <tr>
+            <td>
+              <img class="pad" width="170" height="auto" src="https://sun9-77.userapi.com/impg/dpl997fMbypn1Zla-U9uj7nE9YYAU_ch9jPTlw/didm7rvdkPo.jpg?size=810x1080&quality=96&sign=1e85ba5ee15c02e66e9627175ede13be&type=album">
+            </td>
+            <td>
+              <article>
+                <p>Я студентка 3-го курса направления подготовки <strong>"Прикладная математика"</strong>. По окончании школы я выбрала данную программу, так как особо любила математику и физику. Однако во время обучения в ВУЗе я столкнулась ещё и с программированием, поэтому теперь вы можете ознакомиться с html-страничкой, которую я написала.
+                </p>
+
+              </article>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+
+      <section id="sec3">
+        <h2>Мои увлечения</h2>
+        <article> Помимо учебы я читаю много детективных романов, особое внимание уделяя автору Агате Кристи. Периодически вижусь со своей лучшей подругой из другого университета, чтобы поболтать и отведать вкусную еду в нашем любимом вьетнамском кафе Лао Ли. Обязательно стоит попробовать <a title="Посмотри что это" href="https://ru.wikipedia.org/wiki/Фо_(суп)">ФО БО</a>.</article>
+
+        <figure>
+          <img class="nopad" src="https://play-lh.googleusercontent.com/mohah09aBX4rj5Fe1aFQu5zon892dqHrsyjFF3tFme13DXSXGF8DxcyQrxLDe_FZJw" height="110">
+          <img class="nopad" src="https://cache3.youla.io/files/images/780_780/5e/d3/5ed3cbfebd8da423427d2512.jpg" height="150">
+          <img class="nopad" src="https://www.ru-shop.cz/449051-thickbox_default/prichuda-mertveca.jpg" height="200">
+          <img class="nopad" src="https://avatars.mds.yandex.net/get-altay/1363278/2a00000164b154536e7d2814dcd28a663fb9/XXL" height="200">
+
+          <figcaption style="display: flex; justify-content: center; color:#cf7cb3;">Фото</figcaption>
+        </figure>
+
+        <article>
+          Если вы тоже любите вьетнамскую кухню, то вот адрес прекрасного места с большим выбором блюд, также там есть небольшая столовая и пекарня с разными вкусняшками.
+        </article>
+        <p style="color: grey">Не
+          реклама!</p>
+        <div id="mapid"></div>
+        <script src="map.js"></script>
+      </section>
+
+      
+      <div><button id="chatbot"><img class="MMImage-Origin" src="https://static.tildacdn.com/tild6634-3365-4133-b635-656330326230/549558370edc6d36c4c7.png" width="40" height="auto"></button></div>
+      <script src="chatbot.js"></script>
+    </main>
+
+
+    <footer id="footer">
+      <h2>Обратная связь</h2>
+      <h4 style="color:#9933FF">Как связаться со мной:</h4>
+      <a href="https://vk.com/din_diring" target="_blank">VK</a>
+      |
+      <a href="https://t.me/din_diring" target="_blank">TG</a>
+      |
+      <a href="https://www.instagram.com/din_diring/" target="_blank">INST</a>
+
+      <p>
+        <a href="./form.html">Форма обратной связи</a>
+      </p>
+
+
+      <p align="center" size="30"><a href="#"><big>Наверх</big></a></p>
+      <address>
+        <p>
+          Made by Irina Gribkova, MIEM
+          <br>
+          <time datetime="2022-03-13">213 марта 2022 г.</time>
+        </p>
+      </address>
+    </footer>
+  </body>
+
+</html>
